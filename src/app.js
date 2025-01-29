@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
-const businessWatchlistRoutes = require('./routes/EmployerRoutes/BusinessWatchlistRoutes');
+const infoRoutes = require('./routes/infoRoutes');
 
 
 app.use(cors({
@@ -14,7 +14,7 @@ app.use(cors({
 app.options('*', cors());
 
 app.use(express.json());
-app.use ('/watchlist', businessWatchlistRoutes);
+app.use ('/info', infoRoutes);
 
 
 

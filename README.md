@@ -1,80 +1,91 @@
-📌 Project Description
+# 📌 Project Description
 
-This project is a simple backend API built for HNG Stage 0. It provides an endpoint that returns the developer's email, the current datetime, and a GitHub repository link. The API is deployed on Render.
+This project is a simple backend API built for **HNG Stage 0**. It provides an endpoint that returns the developer's email, the current datetime, and a GitHub repository link. The API is deployed on Render.
 
-🚀 Setup Instructions
+---
 
-PREREQUISITES:
+## 🚀 Setup Instructions
 
-Node.js installed on your system
+### 📋 Prerequisites:
+- **Node.js** installed on your system
+- **npm** or **yarn** for package management
 
-npm or yarn for package management
-
+### 📥 Clone the Repository:
+```bash
 git clone https://github.com/Berr7Wa7ne/hng12-backend-stage0.git
-
 cd hng12-backend-stage0
+```
 
-INSTALL DEPENDECIES:
-
+### 📦 Install Dependencies:
+```bash
 npm install express nodemon cors dotenv
+```
 
-RUN LOCALLY:
+### ▶️ Run Locally:
+```bash
+npx nodemon src/server.js
+```
 
-npx nodemon src/server.js 
+---
 
-DELOYED TO RENDER:
+## 🚀 Deployment Instructions
 
-Push changes to GitHub.
+### 🖥️ Deploy to Render:
+1. Push changes to GitHub.
+2. Log in to [Render](https://render.com/).
+3. Create a **New Web Service** and connect it to your GitHub repository.
+4. Set the build command to:
+   ```bash
+   npm install
+   ```
+5. Set the start command to:
+   ```bash
+   npx nodemon src/server.js
+   ```
+6. Deploy and access the API from the **Render-provided URL**.
 
-Log in to Render.
+---
 
-Create a new Web Service and connect it to GitHub repository.
+## 📡 API Documentation
 
-Set the build command to npm install and the start command to npx nodemon src/server.js.
+### 🔹 GET `/info`
 
-Deploy and access API from the Render-provided URL.
-
-📡 API Documentation
-
-GET /info
-
-DESCRIPTIONS:
-
+**📝 Description:**
 Returns the developer's email, current datetime, and GitHub repository link.
 
-RESPONSE FORMAT:
-
+**📄 Response Format:**
+```json
 {
     "email": "cosyberry3@gmail.com",
     "current_datetime": "2025-01-29T06:52:05.627Z",
     "github_url": "https://github.com/Berr7Wa7ne/hng12-backend-stage0.git"
 }
+```
 
-EXAMPLE USAGE:
-
+**🔍 Example Usage:**
+```bash
 curl -X GET https://hng12-backend-stage0.onrender.com/info
+```
 
-🔗 Links
+---
 
-GitHub Repository: https://github.com/Berr7Wa7ne/hng12-backend-stage0.git
+## 🔗 Links
 
-Deployed API: https://hng12-backend-stage0.onrender.com/info
+- **GitHub Repository:** [hng12-backend-stage0](https://github.com/Berr7Wa7ne/hng12-backend-stage0.git)
+- **Deployed API:** [Live API Endpoint](https://hng12-backend-stage0.onrender.com/info)
 
-👨‍💻 Hire Developers
+---
 
-LOOKING TO HIRE EXPERIENCED DEVELOPERS? CHECK OUT THESE LINKS:
+## 👨‍💻 Hire Developers
 
-https://hng.tech/hire/python-developers
+Looking to hire experienced developers? Check out these links:
 
-https://hng.tech/hire/csharp-developers
+- [Python Developers](https://hng.tech/hire/python-developers)
+- [C# Developers](https://hng.tech/hire/csharp-developers)
+- [Golang Developers](https://hng.tech/hire/golang-developers)
+- [PHP Developers](https://hng.tech/hire/php-developers)
+- [Java Developers](https://hng.tech/hire/java-developers)
+- [Node.js Developers](https://hng.tech/hire/nodejs-developers)
 
-https://hng.tech/hire/golang-developers
+📧 **Contact:** cosyberry3@gmail.com
 
-https://hng.tech/hire/php-developers
-
-https://hng.tech/hire/java-developers
-
-https://hng.tech/hire/nodejs-developers
-
-
-📧 Contact: cosyberry3@gmail.com
